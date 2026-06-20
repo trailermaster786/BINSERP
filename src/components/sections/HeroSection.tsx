@@ -62,10 +62,10 @@ export default function HeroSection() {
            >
              Watch a demo
            </a>
-           <Link
-             href="/createdemo"
-             className="inline-flex items-center justify-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--accent)] px-6 py-3 text-base font-medium text-[var(--primary)] transition-colors hover:bg-[var(--primary)]/10"
-           >
+            <Link
+              href="/createdemo"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--accent)] px-6 py-3 text-base font-medium text-[var(--foreground)] transition-colors hover:bg-[var(--primary)]/10"
+            >
              Try for free
            </Link>
          </div>

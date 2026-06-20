@@ -105,7 +105,7 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileOpen(!isMobileOpen)}
-              className="flex h-9 w-9 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--accent)] lg:hidden"
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--accent)] text-[var(--foreground)] lg:hidden"
               aria-label="Toggle menu"
             >
               {isMobileOpen ? (
