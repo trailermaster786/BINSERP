@@ -97,7 +97,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="/createdemo"
-              className="hidden rounded-lg bg-[var(--primary)] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[var(--primary)]/90 sm:inline-flex"
+              className="hidden rounded-lg bg-[var(--primary)] px-4 py-2 text-sm font-medium text-black transition-colors hover:bg-[var(--primary)]/90 sm:inline-flex"
             >
               Get Demo
             </Link>
@@ -181,7 +181,7 @@ export default function Navbar() {
               <Link
                 href="/createdemo"
                 onClick={() => setIsMobileOpen(false)}
-                className="rounded-lg bg-[var(--primary)] px-4 py-2.5 text-center text-sm font-medium text-white transition-colors hover:bg-[var(--primary)]/90"
+                className="rounded-lg bg-[var(--primary)] px-4 py-2.5 text-center text-sm font-medium text-black transition-colors hover:bg-[var(--primary)]/90"
               >
                 Get Demo
               </Link>

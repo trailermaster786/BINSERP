@@ -61,7 +61,7 @@ export default function PricingSection() {
                   href="/signup"
                   className={`mt-6 inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-medium transition-colors ${
                     plan.highlighted
-                      ? "bg-[var(--primary)] text-white hover:bg-[var(--primary)]/90"
+                      ? "bg-[var(--primary)] text-black hover:bg-[var(--primary)]/90"
                       : "border border-[var(--border)] bg-[var(--accent)] text-[var(--foreground)] hover:bg-[var(--accent-foreground)]/10"
                   }`}
                 >

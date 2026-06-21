@@ -13,7 +13,7 @@ export default function CTASection() {
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
             href="/createdemo"
-            className="inline-flex items-center justify-center rounded-lg bg-[var(--primary)] px-8 py-3 text-base font-medium text-white transition-colors hover:bg-[var(--primary)]/90"
+            className="inline-flex items-center justify-center rounded-lg bg-[var(--primary)] px-8 py-3 text-base font-medium text-black transition-colors hover:bg-[var(--primary)]/90"
           >
             Get Demo Now
           </Link>
