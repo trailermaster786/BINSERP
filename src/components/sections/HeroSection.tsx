@@ -4,8 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-const FloatingLines = dynamic(
-  () => import("@/components/animations/FloatingLines"),
+const Lightfall = dynamic(
+  () => import("@/components/animations/Lightfall"),
   { ssr: false },
 );
 
@@ -20,33 +20,29 @@ const trustedLogos = [
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[600px] overflow-hidden bg-[var(--background)] lg:min-h-[650px]">
-      <div
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('https://motionbgs.com/i/c/960x540/media/8038/cloud-towers-above-tokyo.3840x2160.jpg')" }}
-      />
-
-      <div className="absolute inset-0 z-[1] bg-black/60 dark:bg-black/70" />
-
-      <div className="absolute inset-0 z-[2] bg-grid-yellow/[0.08]" />
-
-      <div className="absolute inset-0 z-[3]">
-        <FloatingLines
-          enabledWaves={["top", "middle", "bottom"]}
-          lineCount={[10, 15, 20]}
-          lineDistance={[8, 6, 4]}
-          bendRadius={5.0}
-          bendStrength={-0.5}
-          interactive={true}
-          parallax={true}
-          animationSpeed={1}
-          mouseDamping={0.05}
-          mixBlendMode="screen"
-          linesGradient={["#BACB00", "#000000"]}
+    <section className="relative min-h-[600px] overflow-hidden bg-[#050a18] lg:min-h-[650px]">
+      <div className="absolute inset-0 z-0">
+        <Lightfall
+          colors={["#BACB00", "#d4e157", "#8bc34a", "#1a1a2e", "#0f3460"]}
+          backgroundColor="#050a18"
+          speed={0.4}
+          streakCount={6}
+          streakWidth={1.2}
+          streakLength={0.8}
+          glow={0.9}
+          density={0.5}
+          twinkle={0.6}
+          zoom={3}
+          backgroundGlow={0.6}
+          opacity={1}
+          mouseInteraction={true}
+          mouseStrength={0.4}
+          mouseRadius={0.8}
+          mouseDampening={0.12}
         />
       </div>
 
-      <div className="absolute inset-0 z-[4] bg-[radial-gradient(ellipse_at_center,transparent_10%,rgba(0,0,0,0.4)_70%)]" />
+      <div className="absolute inset-0 z-[1] bg-[radial-gradient(ellipse_at_center,transparent_10%,rgba(5,10,24,0.5)_70%)]" />
 
       <div className="relative z-10 mx-auto flex min-h-[600px] max-w-7xl flex-col items-center justify-center px-4 text-center sm:px-6 lg:min-h-[650px] lg:px-8">
 <h1 className="text-4xl font-bold tracking-tight text-white drop-shadow-lg sm:text-5xl md:text-6xl lg:text-7xl">
